@@ -1,0 +1,19 @@
+{
+  "name": "diaryapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon diaryApp.js"
+  },
+  "author": "Amulanga Nimejeva",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.13.0",
+    "ajv-formats": "^3.0.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
