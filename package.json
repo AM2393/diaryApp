@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "scripts": {"start": "node diaryApp.js",
     "devStart": "nodemon diaryApp.js"
   },
   "author": "Amulanga Nimejeva",

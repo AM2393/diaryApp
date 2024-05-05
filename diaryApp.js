@@ -3,12 +3,15 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const port = 4000;
-
+const completementController=require("./controller/completement.js")
+const todoController=require("./controller/todo.js")
+const todoListController=require("./controller/todoList.js")
 // Middleware pro zpracování JSON požadavků
 app.use(bodyParser.json());
 
 // Simulace databáze pro ukládání to-do položek
 let todoList = [];
+/*
 
 // Přidání nové položky do to-do seznamu
 app.post('/todos', (req, res) => {
@@ -69,6 +72,11 @@ app.get('/todos', (req, res) => {
 app.get('/', (req, res) => {
     res.send('Hello world!');
 });
+*/
+
+app.use("/completement",completementController)
+app.use("/todo",todoController)
+app.use("/todoList",todoListController)
 
 // Spuštění serveru
 app.listen(port, () => {
